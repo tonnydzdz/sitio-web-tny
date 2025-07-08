@@ -1,0 +1,565 @@
+/* header Top*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 130px;
+
+}
+
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+/* Menú principal */
+.menu {
+    position: fixed;
+    top: 26px;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+    z-index: 999;
+    overflow-x: auto;
+
+}
+
+.logo a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: bold;
+    transition: color 0.5s;
+}
+
+.logo a:hover {
+    color: #e04d4d;
+    cursor: pointer;
+
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.5s;
+}
+
+.nav-links a:hover {
+    cursor: pointer;
+    color: #e04d4d;
+}
+
+.search-box {
+    flex-grow: 1;
+    max-width: 300px
+}
+
+.search-box input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: opacity 0.3s;
+}
+
+.icon:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.cart {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 6px 10px;
+    border-radius: 2px;
+    border: solid;
+    border-color: white;
+    font-weight: bold;
+}
+
+/* header Top*/
+
+
+/*Contenedores de Destacados*/
+
+.c-destacadas-container-title {
+    display: grid;
+    place-items: center;
+    height: 145px;
+}
+
+
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 700px;
+    gap: 10px;
+}
+
+.c-left,
+.c-right-top,
+.c-right-bottom {
+    transition: opacity 0.5s, border-width 0.2s;
+}
+
+.c-left:hover,
+.c-right-top:hover,
+.c-right-bottom:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    border: solid;
+    border-width: 3px;
+}
+
+.c-left {
+    font-size: 50px;
+    grid-row: 1 / span 2;
+    padding: 20px;
+    background: url('left3model.png');
+    background-size: cover;
+    background-position: 10% center;
+}
+
+.c-left .p3 {
+    color: white;
+    font-size: 40px;
+    padding-top: 430px;
+    margin: 0 0 0 0;
+}
+
+.c-left .p1 {
+    font-size: 70px;
+}
+
+.c-left .p2 {
+    font-size: 50px;
+}
+
+.c-right-top {
+    padding: 20px;
+    background: url('model1rigthttop.jpg');
+    background-size: cover;
+    background-position: 10% center;
+}
+
+.p1 {
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0 0 0 0;
+    max-width: 225px;
+}
+
+.p2 {
+    font-size: 30px;
+    margin: 0 0 0 0;
+}
+
+.p3 {
+    font-size: 15px;
+    padding-top: 160px;
+    margin: 0 0 0 0;
+}
+
+
+
+.c-right-bottom {
+    font-size: 50px;
+    background: url('model1rightbottom.jpg');
+    background-size: cover;
+    background-position: 10% center;
+}
+
+.c-right-bottom .p3 {
+    padding-top: 200px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.c-right-bottom .p1 {
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0 0 0 0;
+    max-width: 225px;
+}
+
+.c-right-bottom .p2 {
+    padding-left: 20px;
+    font-size: 30px;
+}
+
+.c-destacadas-title,
+.ofertas-semanales-h2,
+.categorias-marcas,
+.c-right-bottom,
+.c-left,
+.c-right-top {
+    font-family: Montserrat;
+}
+
+/* Menu-Categorias-Navegacion*/
+
+.categorias-marcas {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+.contenedor-marcas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+}
+
+.contenedor-marcas div {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.c-marcas-pantalones {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Montserrat;
+    background: url('pantalones.jpg');
+    background-size: cover;
+    background-position: 50% center;
+    display: grid;
+    height: 400px;
+    width: 300px;
+    color: black;
+    place-content: center;
+    transition: opacity 0.5s, color 0.5s, border 0.1s, border-color 0.5s;
+}
+
+.c-marcas-pantalones:hover,
+.c-marcas-Sueteres:hover,
+.c-marcas-chaquetas:hover,
+.c-marcas-abrigo:hover,
+.c-marcas-accesorios:hover,
+.c-marcas-todo:hover {
+    font-weight: bold;
+    font-family: Montserrat;
+    opacity: 0.8;
+    color: white;
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+}
+
+.c-marcas-Sueteres {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Montserrat;
+    background: url('sueteres.jpg');
+    background-size: cover;
+    background-position: 65% center;
+    display: grid;
+    height: 400px;
+    width: 300px;
+    color: black;
+    place-content: center;
+    transition: opacity 0.5s, color 0.5s, border 0.1s, border-color 0.5s;
+}
+
+
+.c-marcas-chaquetas {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Montserrat;
+    background: url('chaqueta.jpeg');
+    background-size: cover;
+    background-position: 90% center;
+    display: grid;
+    height: 400px;
+    width: 300px;
+    color: black;
+    place-content: center;
+    transition: opacity 0.5s, color 0.5s, border 0.1s, border-color 0.5s;
+}
+
+
+.c-marcas-abrigo {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Montserrat;
+    background: url('abrigo.jpeg');
+    background-size: cover;
+    background-position: 5% center;
+    display: grid;
+    height: 400px;
+    width: 300px;
+    color: black;
+    place-content: center;
+    transition: opacity 0.5s, color 0.5s, border 0.1s, border-color 0.5s;
+}
+
+
+.c-marcas-accesorios {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Montserrat;
+    background: url('accesorios.jpg');
+    background-size: cover;
+    background-position: 5% center;
+    display: grid;
+    height: 400px;
+    width: 300px;
+    color: black;
+    place-content: center;
+    transition: opacity 0.5s, color 0.5s, border 0.1s, border-color 0.5s;
+}
+
+
+.c-marcas-todo {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Montserrat;
+    background: url('vertodo.png');
+    background-size: cover;
+    background-position: 50% center;
+    display: grid;
+    height: 400px;
+    width: 300px;
+    color: black;
+    place-content: center;
+    transition: opacity 0.5s, color 0.5s, border 0.1s, border-color 0.5s;
+}
+
+
+
+/* Ofertas Semanales*/
+
+.ofertas-semanales-title {
+    display: grid;
+    place-items: center;
+    height: 170px;
+}
+
+.productos-en-oferta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.productos-en-oferta div {
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: solid;
+    border-width: 0.4px;
+    height: 360px;
+    cursor: pointer;
+}
+
+.productos-en-oferta img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.in-offer-product-row {
+    position: relative;
+}
+
+.add-to-cart {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: solid;
+    border-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    left: 20px;
+    right: 35px;
+    bottom: 120px;
+    height: 50px;
+    width: 190px;
+    opacity: 0;
+    transition: opacity 0.4s;
+    cursor: pointer;
+}
+
+.add-to-cart:active {
+    color: black;
+    background-color: white;
+    border: solid;
+    border-color: rgb(0, 0, 0);
+    position: absolute;
+    left: 20px;
+    right: 35px;
+    bottom: 120px;
+    height: 50px;
+    width: 190px;
+    opacity: 0;
+    transition: opacity 0.4s;
+    cursor: pointer;
+}
+
+.in-offer-product-row:hover .add-to-cart {
+    opacity: 1;
+}
+
+.in-offer-product-row p {
+    font-family: chivo;
+    padding-left: 7px;
+    max-width: 225px;
+}
+
+/* Footer*/
+
+
+
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ----------- RESPONSIVE ----------- */
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .productos-en-oferta {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+
+    .contenedor-marcas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo a {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .icon {
+        justify-content: flex-start;
+    }
+
+    .cart {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .in-offer-product-row img {
+        max-height: 140px;
+    }
+
+    .add-to-cart {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
